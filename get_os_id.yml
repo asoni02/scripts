@@ -1,7 +1,5 @@
 ---
 - name: read file
-  connection: local
-  become: no
   tasks:
   
     - name: capture output of id command
