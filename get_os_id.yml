@@ -1,6 +1,8 @@
 ---
 - name: read file
   hosts: localhost
+  connection: local
+  become: no
   tasks:
   
     - name: capture output of id command
