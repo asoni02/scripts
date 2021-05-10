@@ -1,0 +1,14 @@
+---
+- name: read file
+  hosts: localhost
+  connection: local
+  become: no
+  tasks:
+  
+    - name: capture output of id command
+      shell: source /etc/os-release && echo $ID
+      register: os_release
+
+    - debug: msg="{{ os_release }}"
+
+    - debug: msg="{{ os_release.stdout }}"
