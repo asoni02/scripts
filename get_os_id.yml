@@ -1,6 +1,6 @@
 ---
 - name: read file
-  hosts: all
+  hosts: localhost
   tasks:
   
     - name: capture output of id command
