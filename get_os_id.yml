@@ -1,6 +1,6 @@
 ---
 - name: read file
-  hosts: all
+  hosts: localhost
   connection: local
   become: no
   tasks:
